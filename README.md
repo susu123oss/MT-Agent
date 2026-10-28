@@ -15,6 +15,7 @@
 </p>
 
 <p align="center">
+  <img alt="Latest public release" src="https://img.shields.io/badge/Release-v1.0.9-0A84FF?style=flat-square">
   <img alt="iOS 15+" src="https://img.shields.io/badge/iOS-15%2B-111111?style=flat-square&logo=apple">
   <img alt="TrollStore" src="https://img.shields.io/badge/Install-TrollStore%20%7C%20Jailbreak-0A84FF?style=flat-square">
   <img alt="AI Agent" src="https://img.shields.io/badge/AI-Agent%20Workspace-5E5CE6?style=flat-square">
@@ -24,6 +25,7 @@
 
 <p align="center">
   <a href="https://github.com/susu123oss/MT-Agent/releases"><strong>下载 MT 智能体</strong></a> ·
+  <a href="#mt-家族--mt-family">MT 家族</a> ·
   <a href="#为什么是-mt-智能体">核心亮点</a> ·
   <a href="#mt-智能体能做什么">主要能力</a> ·
   <a href="#和-mt-内存工具一起用">MT 联动</a> ·
@@ -37,6 +39,22 @@
 
 ---
 
+## MT 家族 · MT Family
+
+**一套面向 iPhone 的工程与自动化生态，三款各司其职的独立产品。**
+
+| 产品 | 核心定位 | 适合做什么 | 下载 |
+| --- | --- | --- | --- |
+| **MT 智能体 · MT Agent** | AI 工程中枢 | 理解项目、分析日志、协助编程、调用工具与 Runtime | [查看 MT Agent](https://github.com/susu123oss/MT-Agent) |
+| **MT 内存工具 · MemoryToolkit** | 真机动态分析工作台 | 内存搜索、稳定定位、断点、ARM64 分析与 MCP 调试 | [查看 MemoryToolkit](https://github.com/susu123oss/MemoryToolkit-Release) |
+| **MT 连点器 · AutoClicker** | 视觉与触摸自动化 | 连点、手势、找图、找色、OCR 与设备侧流程执行 | [查看 AutoClicker](https://github.com/susu123oss/MT-Auto-clicker) |
+
+**理解与编排（Agent） × 运行时观察（MemoryToolkit） × 设备侧执行（AutoClicker）**
+
+三款产品分别安装、独立更新。按需组合即可：需要真机动态分析时，可使用 MT 内存工具提供的 MCP 调试能力与 Agent 协作；连点器则专注视觉识别和触摸自动化，不依赖安装另外两款 App。
+
+---
+
 ## 最新版本与下载
 
 <p align="center">
@@ -45,11 +63,25 @@
   </a>
 </p>
 
-正式安装包统一发布在：
+**当前最新公开正式版：v1.0.9**（与内部开发中的版本不同）。
 
-**[MT-Agent Releases](https://github.com/susu123oss/MT-Agent/releases)**
+**[下载 MT Agent v1.0.9](https://github.com/susu123oss/MT-Agent/releases/tag/1.0.9)** · [查看全部版本](https://github.com/susu123oss/MT-Agent/releases)
+
+下载文件请以公开 Release 实际上传的附件为准；README 不代表尚未发布的开发版本已可下载。
 
 MT 智能体支持应用内自动检查公开新版本。发现新版本后，会在 **设置 → 帮助与诊断 → 关于** 显示更新提醒和小红点。
+
+---
+
+## v1.0.9 · 近期正式版亮点
+
+- **项目与账号连续性**：改善应用更新、环境切换后的账号资料、工作区和项目记忆恢复。
+- **更清晰的 Agent 执行状态**：优化工具调用、子代理任务进度及复杂任务中的状态反馈。
+- **更顺畅的原生交互**：持续改进消息渲染、长文本、工具卡片与运行环境恢复提示。
+- **用量统计更可靠**：完善第三方 API 模型的 Token、费用及重复数据处理。
+- **开发能力与静态分析**：加强 Runtime 兼容、Skills / MCP / 插件能力识别及大型二进制分析流程。
+
+更多详细变更请查看 [v1.0.9 发布说明](https://github.com/susu123oss/MT-Agent/releases/tag/1.0.9)。
 
 ---
 
@@ -422,10 +454,10 @@ MT 智能体支持当前 App 中提供的 AI 登录方式与第三方模型服�
 
 | 环境 | 推荐安装方式 | 说明 |
 | --- | --- | --- |
-| **TrollStore** | TIPA | 推荐普通 TrollStore 用户使用 |
-| **rootful 越狱** | 对应 DEB | 请选择 rootful 包 |
-| **rootless 越狱** | 对应 DEB | 请选择 rootless 包 |
-| **RootHide** | 对应 DEB | 请选择 RootHide 包 |
+| **TrollStore** | `MT-Agent-v1.0.9-Lite.tipa` | 通过 TrollStore 安装；Runtime 组件按需准备 |
+| **rootful 越狱** | `MT-Agent-v1.0.9-rootful.deb` | 请选择 rootful 包 |
+| **rootless 越狱** | `MT-Agent-v1.0.9-rootless.deb` | 请选择 rootless 包 |
+| **RootHide** | `MT-Agent-v1.0.9-roothide.deb` | 请选择 RootHide 包 |
 
 > 不同环境的软件包不要混装。实际提供哪些安装包，以对应 Release 页面为准。
 
